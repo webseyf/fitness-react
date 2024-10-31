@@ -76,7 +76,11 @@
   .Reasons .left {
     grid-template-columns: 1fr; /* Single column on mobile */
   }
-
+.Reasons .right-r span {
+  font-size: 1rem;
+  color: white;
+  
+}
   .Reasons .right-r .partners img {
     width: 110px;
   }
