@@ -1,0 +1,92 @@
+/* Reasons Component Styles */
+.Reasons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1511px;
+  margin: 0 auto;
+}
+
+/* Left Section with Images */
+.Reasons .left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  gap: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Reasons .left img {
+  width: 322px;
+  height: 322px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Right Section */
+.Reasons .right-r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.Reasons .right-r span {
+  font-size: 1.3rem;
+  color: white;
+  
+}
+
+.Reasons .right-r .stroke-text {
+ font-size: 54px;
+ color: transparent;
+}
+
+.Reasons .right-r .partners {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.Reasons .right-r .partners img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Reasons {
+    flex-direction: column;
+  }
+  .Reasons .left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .Reasons .left {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .Reasons .right-r .partners img {
+    width: 110px;
+  }
+}
+
+
+
+
+
+.Reasons .right-r .why{
+
+  font-size: 3rem;
+}

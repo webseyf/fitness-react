@@ -1,0 +1,85 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--darkGray); /* Optional: add background for clarity */
+}
+
+/* Logo Styling */
+.logo {
+  width: 10rem;
+  height: auto;
+}
+a{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-decoration-line: none;
+  margin-left: 20px;
+}
+/* Header Menu */
+.header-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: white;
+}
+
+.header-menu > li:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/* Mobile and Tablet View */
+@media (max-width: 768px) {
+  /* Reduce logo size on smaller screens */
+  .logo {
+    width: 6rem;
+  }
+
+  /* Stack menu items vertically and add spacing */
+  .header-menu {
+    flex-direction: column;
+    gap: 1rem;
+    display: none; /* Hidden by default on mobile */
+    position: absolute;
+    top: 6rem;
+    z-index: 5;
+    right: 4rem;
+    background-color: var(--orange);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  /* Show Menu Button */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: rgb(247, 222, 3);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Show menu when toggle is active */
+  .header-menu.show {
+    display: flex;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  /* Further reduce logo and gap sizes for smaller screens */
+  .logo {
+    width: 8rem;
+  }
+
+  .header-menu {
+    top: 3rem;
+    right: 1rem;
+    width: 80%;
+  }
+}

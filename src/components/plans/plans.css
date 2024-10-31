@@ -1,0 +1,162 @@
+/* Main Container for Plans */
+.plans-container {
+  padding: 3rem 1rem;
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Grid Layout for Plans */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Individual Plan Card */
+.plan {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: var(--planCard);
+}
+
+/* Plan Name and Price */
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.plan-price {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: #ffebcc;
+}
+
+/* Feature List */
+.plan .features {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.feature img {
+  width: 22px;
+  height: 22px;
+}
+
+/* More Benefits Text */
+.more-benefits {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffc107;
+  cursor: pointer;
+}
+
+/* Join Now Button */
+.join-now {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: var(--primary-color, #ffc107);
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-now:hover {
+  background-color: #ffa500;
+}
+
+/* Emphasized Center Plan */
+.plans .plan:nth-child(2) {
+  background-color: var(--orange);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 165, 0, 0.4);
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .plans {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+
+  .plans-container {
+    padding: 2rem 1rem;
+  }
+
+  .plan {
+    padding: 1.5rem;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .plans {
+    grid-template-columns: 1fr; /* Stack the plans */
+  }
+
+  .programs-header {
+    font-size: 1.4rem;
+  }
+
+  .plan {
+    padding: 1.5rem;
+  }
+
+  .plan-name,
+  .plan-price {
+    font-size: 1.2rem;
+  }
+
+  .join-now {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .programs-header {
+    font-size: 1.5rem; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .programs-header {
+    font-size: 1.2rem; /* Smaller font size for phones */
+  }
+
+  .stroke-text {
+    -webkit-text-stroke-width: 0.5px; /* Thinner stroke on mobile */
+  }
+}
