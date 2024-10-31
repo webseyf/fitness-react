@@ -222,7 +222,7 @@
   }
 
   .the-best-ad {
-    width: 80%; /* Wider on mobile */
+    width: 100%; /* Wider on mobile */
     font-size: 1rem; /* Smaller font */
     padding: 10px 8px;
     margin: 2rem auto;
