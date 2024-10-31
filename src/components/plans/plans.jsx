@@ -4,8 +4,8 @@ import whiteTick from '../../assets/whiteTick.png'; // Ensure this path is corre
 
 const Plans = () => {
   return (
-    <div className='plans-container' id='plans'>
-      <div className="programs-header">
+    <div className='plans-container ' id='plans'>
+      <div className="programs-header blur">
         <span className='stroke-text'>READY TO START</span>
         <span>YOUR JOURNEY</span>
         <span className='stroke-text'>NOW WITH US</span>
@@ -14,7 +14,7 @@ const Plans = () => {
       {/* Cards */}
       <div className='plans'>
         {plansData.map((plan, index) => (
-          <div className='plan' key={index}>
+          <div className='plan blur' key={index}>
             {plan.icon} <br /><br />
             <span className="plan-name">{plan.name}</span><br /><br />
             <span className="plan-price">{plan.price} Birr</span>
