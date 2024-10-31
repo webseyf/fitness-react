@@ -15,7 +15,7 @@ function Reasons() {
         <img src="/pexels-823sl-2294403.jpg" alt="" />
       </div>
 
-      <div className="right-r">
+      <div className="right-r blur">
         <span style={{color: "var(--orange)"}}>SOME REASONS</span>
 
         <div >
