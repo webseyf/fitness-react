@@ -10,7 +10,7 @@ function Hero() {
     <div className="hero" id='/'>
       <div className="left-h">
         <Header />
-        <div className="the-best-ad">
+        <div className="the-best-ad blur">
           <div></div>
           <span>The best fitness club in AASTU</span>
         </div>
@@ -53,7 +53,7 @@ function Hero() {
       </div>
 
       {/* right */}
-      <div className="right-h">
+      <div className="right-h blur">
         <button className="btn">JOIN Now</button>
  
         <div className="heart-rate">
